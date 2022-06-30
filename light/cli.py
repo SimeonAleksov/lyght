@@ -1,15 +1,14 @@
-"""Console script for light."""
+import asyncio
 
 import click
+
+from light.http import server
 
 
 @click.command()
 def main():
-    """Main entrypoint."""
-    click.echo("light")
-    click.echo("=" * len("light"))
-    click.echo("Lighting fast python web framework.")
-
+    _server = server.Server(port=5000, log_level='debug')
+    asyncio.run(_server.serve())
 
 if __name__ == "__main__":
     main()  # pragma: no cover
