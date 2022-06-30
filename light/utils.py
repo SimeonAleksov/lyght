@@ -19,5 +19,9 @@ def _get_project_settings():
 
 def import_settings():
     path = _get_project_settings()
-    logger.info(f'{_LOG_PREFIX} Importing settings from {path}')
-    return import_module(f'{path}.{_PROJECT_SETTINGS}')
+    logger.debug(f'{_LOG_PREFIX} Importing settings from {path}')
+    try:
+        return import_module(_PROJECT_SETTINGS)
+    except ModuleNotFoundError:
+        logger.warning('You should create your own settings.py file!')
+        return import_module(f'{path}.{_PROJECT_SETTINGS}')
