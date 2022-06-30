@@ -1,7 +1,7 @@
 import json
 
+from light.config import settings
 
-from light import settings
 
 
 class Light:

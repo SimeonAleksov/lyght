@@ -73,7 +73,7 @@ doc = [
     ]
 
 [tool.poetry.scripts]
-light = 'light.cli:main'
+light_serve= 'light.serve:main'
 
 [tool.black]
 line-length = 120
