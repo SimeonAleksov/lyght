@@ -24,9 +24,8 @@ class Settings:
         for setting in dir(module):
             if setting.isupper():
                 setting_value = getattr(module, setting)
-                if setting_value == _DEFAULT_ROUTE_CONFIG_MODULE_NAME:
+                if setting == _DEFAULT_ROUTE_CONFIG_MODULE_NAME:
                     routes_module = import_module(setting_value)
-                    print(routes_module)
                     routes = getattr(routes_module, 'route_config')
                     if not isinstance(routes, Routes):
                         raise ImproperlyRouteConfigurationError(
