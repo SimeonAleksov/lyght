@@ -1,6 +1,6 @@
 import uvicorn
 
-from light.config import settings
+from lyght.config import settings
 
 
 class Server:

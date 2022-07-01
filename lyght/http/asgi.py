@@ -1,11 +1,11 @@
 import json
 
-from light.config import settings
-from light.routes import Routes
+from lyght.config import settings
+from lyght.routes import Routes
 
 
 
-class Light:
+class Lyght:
     def __init__(self, routes: Routes):
         self.routes = routes
 
@@ -26,4 +26,4 @@ class Light:
         })
 
 
-light = Light(routes=settings.ROUTE_CONF)
+lyght = Lyght(routes=settings.ROUTE_CONF)

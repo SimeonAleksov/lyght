@@ -1,4 +1,4 @@
-sources = light
+sources = lyght
 
 .PHONY: test format lint unittest coverage pre-commit clean
 test: format lint unittest

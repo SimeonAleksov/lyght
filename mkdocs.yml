@@ -1,7 +1,7 @@
-site_name: light
-site_url: https://SimeonAleksov.github.io/light
-repo_url: https://github.com/SimeonAleksov/light
-repo_name: SimeonAleksov/light
+site_name: lyght
+site_url: https://SimeonAleksov.github.io/lyght
+repo_url: https://github.com/SimeonAleksov/lyght
+repo_name: SimeonAleksov/lyght
 #strict: true
 nav:
   - Home: index.md
@@ -34,7 +34,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.highlight:
+  - pymdownx.highlyght:
       linenums: false
   - pymdownx.superfences
   - pymdownx.inlinehilite
@@ -51,7 +51,7 @@ plugins:
       lang: en
   - mkdocstrings:
       watch:
-        - light
+        - lyght
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -63,7 +63,7 @@ extra:
       link: https://github.com/waynerv/cookiecutter-pypackage
       name: Facebook
     - icon: fontawesome/brands/github
-      link: https://github.com/SimeonAleksov/light
+      link: https://github.com/SimeonAleksov/lyght
       name: Github
     - icon: material/email
       link: "mailto:aleksov_s@outlook.com"

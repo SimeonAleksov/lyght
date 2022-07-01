@@ -1,8 +1,8 @@
 [tool]
 [tool.poetry]
-name = "light"
+name = "lyght"
 version = "0.2.0"
-homepage = "https://github.com/SimeonAleksov/light"
+homepage = "https://github.com/SimeonAleksov/lyght"
 description = "Lighting fast python web framework.."
 authors = ["Simeon Aleksov <aleksov_s@outlook.com>"]
 readme = "README.md"
@@ -19,7 +19,7 @@ classifiers=[
     'Programming Language :: Python :: 3.9',
 ]
 packages = [
-    { include = "light" },
+    { include = "lyght" },
     { include = "tests", format = "sdist" },
 ]
 
@@ -74,7 +74,7 @@ doc = [
     ]
 
 [tool.poetry.scripts]
-light= 'light.serve:main'
+lyght= 'lyght.serve:main'
 
 [tool.black]
 line-length = 120

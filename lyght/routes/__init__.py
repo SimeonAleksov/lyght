@@ -2,8 +2,8 @@ import typing
 
 import pydantic
 
-from light.routes import exceptions as routes_exceptions
-from light.controllers import BaseController
+from lyght.routes import exceptions as routes_exceptions
+from lyght.controllers import BaseController
 
 
 class Route(pydantic.BaseModel):

@@ -2,7 +2,7 @@ import asyncio
 
 import click
 
-from light.http import server
+from lyght.http import server
 
 
 @click.command()

@@ -2,13 +2,13 @@ import os
 from importlib import import_module
 
 
-from light.config import global_settings
-from light.routes import Routes
-from light.config.exceptions import ImproperlyRouteConfigurationError
+from lyght.config import global_settings
+from lyght.routes import Routes
+from lyght.config.exceptions import ImproperlyRouteConfigurationError
 
 
 empty = object()
-ENVIRONMENT_SETTINGS_VARIABLE = 'LIGHT_SETTINGS'
+ENVIRONMENT_SETTINGS_VARIABLE = 'LYGHT_SETTINGS'
 _DEFAULT_ROUTE_CONFIG_MODULE_NAME = 'ROUTE_CONF_MODULE'
 
 
@@ -29,7 +29,7 @@ class Settings:
                     routes = getattr(routes_module, 'route_config')
                     if not isinstance(routes, Routes):
                         raise ImproperlyRouteConfigurationError(
-                            'The provided module for routes has invalid configured routes. Make sure it points to light.routes.Routes.'
+                            'The provided module for routes has invalid configured routes. Make sure it points to lyght.routes.Routes.'
                         )
 
                     setattr(self, 'ROUTES', routes)
