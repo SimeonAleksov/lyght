@@ -1,11 +1,12 @@
 import json
 
 from light.config import settings
+from light.routes import Routes
 
 
 
 class Light:
-    def __init__(self, routes):
+    def __init__(self, routes: Routes):
         self.routes = routes
 
     async def __call__(self, scope, receive, send):
@@ -23,5 +24,6 @@ class Light:
             'type': 'http.response.body',
             'body': json.dumps({"message": f"Hello from {scope['path']}!"}).encode('utf-8'),
         })
+
 
 light = Light(routes=settings.ROUTE_CONF)
