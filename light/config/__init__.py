@@ -16,8 +16,13 @@ class Settings:
                 setattr(self, setting, getattr(global_settings, setting))
 
         self.SETTINGS_MODULE = settings_module
-        if self.SETTINGS_MODULE:
-            module = import_module(self.SETTINGS_MODULE)
+        module = import_module(self.SETTINGS_MODULE)
+        self._explicit_settings = set()
+        for setting in dir(module):
+            if setting.isupper():
+                setting_value = getattr(module, setting)
+                setattr(self, setting, setting_value)
+                self._explicit_settings.add(setting)
 
 
 class LazySettings:
