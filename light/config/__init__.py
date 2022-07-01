@@ -3,10 +3,13 @@ from importlib import import_module
 
 
 from light.config import global_settings
+from light.routes import Routes
+from light.config.exceptions import ImproperlyRouteConfigurationError
 
 
 empty = object()
 ENVIRONMENT_SETTINGS_VARIABLE = 'LIGHT_SETTINGS'
+_DEFAULT_ROUTE_CONFIG_MODULE_NAME = 'ROUTE_CONF_MODULE'
 
 
 class Settings:
@@ -21,6 +24,15 @@ class Settings:
         for setting in dir(module):
             if setting.isupper():
                 setting_value = getattr(module, setting)
+                if setting_value == _DEFAULT_ROUTE_CONFIG_MODULE_NAME:
+                    routes_module = import_module(setting_value)
+                    routes = getattr(routes_module, 'route_config')
+                    if not isinstance(routes, Routes):
+                        raise ImproperlyRouteConfigurationError(
+                            'The provided module for routes has invalid configured routes. Make sure it points to light.routes.Routes.'
+                        )
+
+                    setattr(self, 'ROUTES', routes)
                 setattr(self, setting, setting_value)
                 self._explicit_settings.add(setting)
 
