@@ -11,3 +11,7 @@ class InvalidRouteNameError(BaseRouteException):
 
 class InvalidControllerInstance(BaseRouteException):
     pass
+
+
+class DuplicatePathParamError(BaseRouteException):
+    pass
