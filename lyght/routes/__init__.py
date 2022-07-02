@@ -5,8 +5,15 @@ import pydantic
 from lyght.routes.route import Route
 
 
-class Routes(pydantic.BaseModel):
-    routes: typing.List[Route]
+class Routes(
+    typing.NamedTuple(
+        'Routes',
+        [
+            ('routes', Route),
+        ],
+    )
+):
+    pass
 
 
 __all__ = [

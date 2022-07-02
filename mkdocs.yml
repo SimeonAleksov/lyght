@@ -34,7 +34,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.highlyght:
+  - pymdownx.highlight:
       linenums: false
   - pymdownx.superfences
   - pymdownx.inlinehilite
