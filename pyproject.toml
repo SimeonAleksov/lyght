@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "lyght"
-version = "0.2.0"
+version = "0.3.0"
 homepage = "https://github.com/SimeonAleksov/lyght"
 description = "Lighting fast python web framework.."
 authors = ["Simeon Aleksov <aleksov_s@outlook.com>"]
