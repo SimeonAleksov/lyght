@@ -6,3 +6,7 @@ class BaseHTTPException(Exception):
 
 class InvalidHTTPConnectionError(BaseHTTPException):
     pass
+
+
+class ClientDisconnectedError(BaseHTTPException):
+    pass

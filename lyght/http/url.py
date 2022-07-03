@@ -78,3 +78,8 @@ class URLPath(str):
         netloc = self.host
         path = base_url.path.rstrip("/") + str(self)
         return str(URL(scheme=scheme, netloc=netloc, path=path))
+
+
+class QueryParams:
+    def __new__(self, *args, **kwargs):
+        pass
