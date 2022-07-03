@@ -1,8 +1,8 @@
 # light
 
 
-[![pypi](https://img.shields.io/pypi/v/light.svg)](https://pypi.org/project/lyght//)
-[![python](https://img.shields.io/pypi/pyversions/light.svg)](https://pypi.org/project/light/)
+[![pypi](https://img.shields.io/pypi/v/lyght?style=for-the-badge)](https://img.shields.io/pypi/v/lyght?style=for-the-badge)
+[![downloads](https://img.shields.io/pypi/dm/lyght?style=for-the-badge)](https://img.shields.io/pypi/dm/lyght?style=for-the-badge)
 [![Build Status](https://github.com/SimeonAleksov/light/actions/workflows/dev.yml/badge.svg)](https://github.com/SimeonAleksov/light/actions/workflows/dev.yml)
 [![codecov](https://codecov.io/gh/SimeonAleksov/light/branch/main/graphs/badge.svg)](https://codecov.io/github/SimeonAleksov/light)
 
