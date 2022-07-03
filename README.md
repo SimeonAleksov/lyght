@@ -1,16 +1,15 @@
 # light
 
 <p align="center">
-  [![pypi](https://img.shields.io/pypi/v/lyght?style=for-the-badge)](https://img.shields.io/pypi/v/lyght?style=for-the-badge)
-  [![activity](https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=for-the-badge)](https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=for-the-badge)
-  [![downloads](https://img.shields.io/pypi/dm/lyght?style=for-the-badge)](https://img.shields.io/pypi/dm/lyght?style=for-the-badge)
-
-  [![status](https://img.shields.io/pypi/status/lyght?style=for-the-badge)](https://img.shields.io/pypi/status/lyght?style=for-the-badge)
-  [![license](https://img.shields.io/pypi/l/lyght?style=for-the-badge)](https://img.shields.io/pypi/l/lyght?style=for-the-badge)
-  [![Build Status](https://img.shields.io/github/workflow/status/SimeonAleksov/lyght/dev%20workflow?style=for-the-badge)](https://img.shields.io/github/workflow/status/SimeonAleksov/lyght/dev%20workflow?style=for-the-badge)
-  [![issues](https://img.shields.io/github/issues/SimeonAleksov/lyght?style=for-the-badge)](https://img.shields.io/github/issues/SimeonAleksov/lyght?style=for-the-badge)
-  [![prs](https://img.shields.io/github/issues-pr-closed/SimeonAleksov/lyght?style=for-the-badge)](https://img.shields.io/github/issues-pr-closed/SimeonAleksov/lyght?style=for-the-badge)
-  [![codecov](https://img.shields.io/codecov/c/github/SimeonAleksov/lyght?style=for-the-badge)](https://img.shields.io/codecov/c/github/SimeonAleksov/lyght?style=for-the-badge)
+  <img src="https://img.shields.io/pypi/v/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/pypi/dm/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/pypi/status/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/pypi/l/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/github/workflow/status/SimeonAleksov/lyght/dev%20workflow?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/SimeonAleksov/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues-pr-closed/SimeonAleksov/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/codecov/c/github/SimeonAleksov/lyght?style=for-the-badge">
 </p>
 
 
