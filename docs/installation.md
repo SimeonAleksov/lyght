@@ -5,7 +5,7 @@
 To install lyght, run this command in your
 terminal:
 
-``` console
+```
 $ pip install lyght
 ```
 
@@ -21,13 +21,13 @@ the [Github repo][].
 
 You can either clone the public repository:
 
-``` console
+```
 $ git clone git://github.com/SimeonAleksov/lyght
 ```
 
 Or download the [tarball][]:
 
-``` console
+```
 $ curl -OJL https://github.com/SimeonAleksov/lyght/tarball/master
 ```
 
@@ -39,5 +39,4 @@ $ pip install .
 
   [pip]: https://pip.pypa.io
   [Python installation guide]: http://docs.python-guide.org/en/latest/starting/installation/
-  [Github repo]: https://github.com/%7B%7B%20cookiecutter.github_username%20%7D%7D/%7B%7B%20cookiecutter.project_slug%20%7D%7D
-  [tarball]: https://github.com/%7B%7B%20cookiecutter.github_username%20%7D%7D/%7B%7B%20cookiecutter.project_slug%20%7D%7D/tarball/master
+  [Github repo]: https://github.com/SimeonAleksov/lyght

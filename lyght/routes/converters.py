@@ -1,24 +1,27 @@
 import datetime
 import typing
 import uuid
+from abc import ABC, abstractmethod
 from functools import lru_cache
 
 
 T = typing.TypeVar("T")
 
 
-class Converter:
+class Converter(ABC):
     regex: typing.ClassVar[str] = ""
 
+    @abstractmethod
     def to_python(self, value: str) -> T:
-        raise NotImplementedError()
+        pass
 
+    @abstractmethod
     def to_route(self, value: T) -> T:
-        raise NotImplementedError()
+        pass
 
 
 
-class IntConverter:
+class IntConverter(Converter):
     regex = "[0-9]+"
 
     def to_python(self, value):
@@ -28,7 +31,7 @@ class IntConverter:
         return str(value)
 
 
-class StringConverter:
+class StringConverter(Converter):
     regex = "[^/]+"
 
     def to_python(self, value):
@@ -38,7 +41,7 @@ class StringConverter:
         return value
 
 
-class UUIDConverter:
+class UUIDConverter(Converter):
     regex = "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
 
     def to_python(self, value):

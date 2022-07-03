@@ -3,7 +3,7 @@
 To use light in a project
 #### An example lyght routing:
 
-```python
+```
 from lyght.routes import Route, Routes
 
 
