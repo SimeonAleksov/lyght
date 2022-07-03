@@ -2,15 +2,15 @@
   Lyght
 </p>
 <p align="center">
-  <img src="https://img.shields.io/pypi/v/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/pypi/dm/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/pypi/status/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/pypi/l/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/github/workflow/status/SimeonAleksov/lyght/dev%20workflow?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/SimeonAleksov/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues-pr-closed/SimeonAleksov/lyght?style=for-the-badge">
-  <img src="https://img.shields.io/codecov/c/github/SimeonAleksov/lyght?style=for-the-badge">
+  <img src="https://img.shields.io/pypi/v/lyght?style=flat-square">
+  <img src="https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=flat-square">
+  <img src="https://img.shields.io/pypi/dm/lyght?style=flat-square">
+  <img src="https://img.shields.io/pypi/status/lyght?style=flat-square">
+  <img src="https://img.shields.io/pypi/l/lyght?style=flat-square">
+  <img src="https://img.shields.io/github/workflow/status/SimeonAleksov/lyght/dev%20workflow?style=flat-square">
+  <img src="https://img.shields.io/github/issues/SimeonAleksov/lyght?style=flat-square">
+  <img src="https://img.shields.io/github/issues-pr-closed/SimeonAleksov/lyght?style=flat-square">
+  <img src="https://img.shields.io/codecov/c/github/SimeonAleksov/lyght?style=flat-square">
 </p>
 
 
