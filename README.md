@@ -1,6 +1,5 @@
-# light
-
 <p align="center">
+  <span> Lyght </span>
   <img src="https://img.shields.io/pypi/v/lyght?style=for-the-badge">
   <img src="https://img.shields.io/github/commit-activity/y/SimeonAleksov/lyght?style=for-the-badge">
   <img src="https://img.shields.io/pypi/dm/lyght?style=for-the-badge">
