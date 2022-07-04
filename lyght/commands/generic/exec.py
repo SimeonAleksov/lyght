@@ -49,8 +49,15 @@ def exec_command(ctx, command):
         'init': init,
     }
     cmnd_to_execute = commands.get(command)
+    kwargs = {}
+    args = []
+    for arg in ctx.args:
+        if len(a := arg.split('=')) == 2:
+            kwargs[a[0]] = a[1]
+        else:
+            args.append(arg)
     if cmnd_to_execute is not None:
-        call_click_command(cmnd_to_execute)
+        call_click_command(cmnd_to_execute, **kwargs)
 
 
 if __name__ == "__main__":
