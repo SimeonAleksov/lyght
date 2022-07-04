@@ -55,7 +55,7 @@ pyfiglet = "^0.8.post1"
 
 [tool.poetry.scripts]
 "lyght init"= "lyght.commands.generic.init:init"
-"lyght serve"= "lyght.commands.http.serve:serve"
+"lyght"= "lyght.commands.http.serve:serve"
 [tool.poetry.extras]
 test = [
     "pytest",
