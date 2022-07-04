@@ -1,1 +1,1 @@
-from lyght.commands.generic.init imoprt init
+from lyght.commands.generic.init import init
