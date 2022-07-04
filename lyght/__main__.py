@@ -1,5 +1,5 @@
-from lyght.commands import serve
+from lyght.commands.generic.init import init
 
 
 if __name__ == '__main__':
-    serve.serve()
+    init()

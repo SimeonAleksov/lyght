@@ -50,9 +50,12 @@ bump2version = {version = "^1.0.1", optional = true}
 uvloop = "^0.16.0"
 uvicorn = {extras = ["standard"], version = "^0.18.2"}
 pydantic = "^1.9.1"
+rich = "^12.4.4"
+pyfiglet = "^0.8.post1"
 
 [tool.poetry.scripts]
-"lyght serve"= "lyght.commands.http:serve"
+"lyght init"= "lyght.commands.generic.init:init"
+"lyght serve"= "lyght.commands.http.serve:serve"
 [tool.poetry.extras]
 test = [
     "pytest",
