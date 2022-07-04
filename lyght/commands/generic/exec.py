@@ -40,7 +40,11 @@ def call_click_command(cmd, *args, **kwargs):
 def exec_command(ctx, command):
     from lyght.commands.generic.init import init
 
-    print(ctx.args)
+    if 'serve' == command:
+        from lyght.commands.http.serve import serve
+
+        call_click_command(serve)
+
     commands = {
         'init': init,
     }

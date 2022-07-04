@@ -54,8 +54,7 @@ rich = "^12.4.4"
 pyfiglet = "^0.8.post1"
 
 [tool.poetry.scripts]
-"lyght init"= "lyght.commands.generic.init:init"
-"lyght"= "lyght.commands.http.serve:serve"
+"lyght"= "lyght.commands.generic.exec:exec_command"
 [tool.poetry.extras]
 test = [
     "pytest",
