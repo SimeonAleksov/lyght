@@ -51,6 +51,8 @@ uvloop = "^0.16.0"
 uvicorn = {extras = ["standard"], version = "^0.18.2"}
 pydantic = "^1.9.1"
 
+[tool.poetry.scripts]
+"lyght serve"= "lyght:commands"
 [tool.poetry.extras]
 test = [
     "pytest",
