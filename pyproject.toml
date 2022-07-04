@@ -52,7 +52,7 @@ uvicorn = {extras = ["standard"], version = "^0.18.2"}
 pydantic = "^1.9.1"
 
 [tool.poetry.scripts]
-"lyght serve"= "lyght:commands"
+"lyght serve"= "lyght.commands.http:serve"
 [tool.poetry.extras]
 test = [
     "pytest",
